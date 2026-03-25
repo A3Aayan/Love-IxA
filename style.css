@@ -1,0 +1,38 @@
+body {
+  font-family: 'Georgia', serif;
+  background: #fff0f5;
+  color: #800040;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.letter {
+  display: flex;
+  flex-direction: column; /* vertical stacking */
+  align-items: center;
+  gap: 12px;
+  max-width: 600px;
+  white-space: pre-wrap;
+}
+
+.highlight {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.heart {
+  color: red;
+  font-size: 24px;
+  display: inline-block;
+  animation: beat 1s infinite;
+}
+
+@keyframes beat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.5); }
+}
+
+.end-hearts span {
+  margin: 0 5px;
+}
