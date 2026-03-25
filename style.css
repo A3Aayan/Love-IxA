@@ -1,29 +1,32 @@
 body {
   font-family: 'Georgia', serif;
-  background: #fff0f5;
-  color: #800040;
+  background: #fff0f5; /* soft pink background */
+  color: #800040; /* deep reddish text */
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   padding: 50px;
 }
 
 .letter {
   display: flex;
-  flex-direction: column; /* vertical stacking */
+  flex-direction: column; /* vertical layout */
   align-items: center;
-  gap: 12px;
+  gap: 15px;
   max-width: 600px;
   white-space: pre-wrap;
+  line-height: 1.6;
 }
 
 .highlight {
   font-size: 32px;
   font-weight: bold;
+  text-align: center;
 }
 
 .heart {
   color: red;
-  font-size: 24px;
+  font-size: 32px;
   display: inline-block;
   animation: beat 1s infinite;
 }
